@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - FreshMorph</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex justify-center items-center h-screen">
+    <div class="bg-white p-8 rounded-lg shadow-lg w-96">
+        <h2 class="text-2xl font-bold text-green-700 text-center mb-4">Sign Up</h2>
+        <form id="signupForm">
+            <div class="mb-4">
+                <label class="block text-gray-700">Full Name</label>
+                <input type="text" id="fullName" class="w-full px-3 py-2 border rounded-lg" required>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700">Email</label>
+                <input type="email" id="signupEmail" class="w-full px-3 py-2 border rounded-lg" required>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700">Password</label>
+                <input type="password" id="signupPassword" class="w-full px-3 py-2 border rounded-lg" required>
+            </div>
+            <button type="submit" class="w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700">Sign Up</button>
+        </form>
+        <p class="text-center mt-4">Already have an account? <a href="login.html" class="text-green-600 font-bold">Login</a></p>
+    </div>
+
+    <script>
+        document.getElementById("signupForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            const fullName = document.getElementById("fullName").value;
+            const email = document.getElementById("signupEmail").value;
+            const password = document.getElementById("signupPassword").value;
+
+            // Dummy signup process (Replace with backend API call)
+            if (fullName && email && password) {
+                alert("Signup Successful! Redirecting to login.");
+                window.location.href = "login.html";
+            } else {
+                alert("Please fill all fields correctly.");
+            }
+        });
+    </script>
+</body>
+</html>
