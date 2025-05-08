@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FreshMorph - Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles1.css">
+  <style>
+    /* Custom CSS for the carousel */
+    .carousel {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      -webkit-overflow-scrolling: touch;
+    }
+    .carousel-item {
+      flex: 0 0 auto;
+      scroll-snap-align: start;
+      width: 300px; /* Adjust as needed */
+      margin-right: 16px;
+    }
+    .carousel::-webkit-scrollbar {
+      display: none; /* Hide scrollbar */
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-r from-green-100 to-yellow-100 font-sans">
+  <!-- Navbar -->
+<header class="bg-gradient-to-r from-green-600 to-green-800 text-white shadow-lg">
+  <div class="container mx-auto flex items-center justify-between py-4 px-6">
+    <h1 class="text-2xl font-bold">FreshMorph</h1>
+    <nav class="flex items-center space-x-6">
+      <a href="#" class="hover:text-yellow-300 transition duration-300">Home</a>
+      <a href="#products" class="hover:text-yellow-300 transition duration-300">Products</a>
+      <a href="#farmers" class="hover:text-yellow-300 transition duration-300">Farmers</a>
+      <a href="#about" class="hover:text-yellow-300 transition duration-300">About</a>
+      <a href="#contact" class="hover:text-yellow-300 transition duration-300">Contact</a>
+      <!-- Login and Register Buttons -->
+      <a href="login.html" class="bg-yellow-500 text-black px-4 py-2 rounded-lg shadow hover:bg-yellow-600 transition duration-300">Login</a>
+      <a href="register.html" class="bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600 transition duration-300">Register</a>
+    </nav>
+  </div>
+</header>
+
+  <!-- Hero Section -->
+  <section class="bg-cover bg-center h-screen" style="background-image: url('https://via.placeholder.com/1920x1080');">
+    <div class="bg-gradient-to-r from-green-600 to-green-800 bg-opacity-70 h-full flex flex-col justify-center items-center text-center text-white">
+      <h1 class="text-5xl font-bold mb-4">Fresh Produce, Direct from Farms</h1>
+      <p class="text-xl mb-6">Connecting farmers and consumers for a sustainable future.</p>
+      <a href="#products" class="bg-yellow-500 text-black px-6 py-3 rounded-lg shadow hover:bg-yellow-600 transition duration-300">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+<section class="py-16 bg-gradient-to-r from-green-100 to-yellow-100">
+  <div class="container mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-8 text-green-700">Why Choose FreshMorph?</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Farm-Fresh Produce -->
+      <div class="p-6 bg-gradient-to-r from-green-200 to-yellow-200 rounded-lg shadow hover:shadow-lg transition duration-300">
+        <img src="https://cdn.glitch.global/52e1903d-ee0b-4f73-8336-7383956039e8/farm%20fresh%20produce.jpeg?v=1740403803370" alt="Fresh Produce" class="w-40 h-40 mx-auto mb-6 object-cover rounded-full">
+        <h3 class="text-xl font-semibold mb-2 text-green-600">Farm-Fresh Produce</h3>
+        <p class="text-gray-700 mb-4">
+          At FreshMorph, we bring you the freshest produce straight from local farms. Our farmers follow organic and sustainable practices to ensure you get the highest quality fruits, vegetables, and grains.
+        </p>
+        <p class="text-gray-700 mb-4">
+          <strong>Benefits:</strong>
+          <ul class="list-disc list-inside mb-4">
+            <li>100% organic and chemical-free produce.</li>
+            <li>Harvested at peak freshness for maximum flavor.</li>
+            <li>Supports local farmers and their communities.</li>
+          </ul>
+        </p>
+        <a href="#products" class="bg-yellow-500 text-black px-6 py-3 rounded-lg shadow hover:bg-yellow-600 transition duration-300">Shop Now</a>
+      </div>
+
+      <!-- Trusted Farmers -->
+      <div class="p-6 bg-gradient-to-r from-green-200 to-yellow-200 rounded-lg shadow hover:shadow-lg transition duration-300">
+        <img src="https://cdn.glitch.global/52e1903d-ee0b-4f73-8336-7383956039e8/trusted%20farmers.jpg?v=1740403822607" alt="Trusted Farmers" class="w-40 h-40 mx-auto mb-6 object-cover rounded-full">
+        <h3 class="text-xl font-semibold mb-2 text-green-600">Trusted Farmers</h3>
+        <p class="text-gray-700 mb-4">
+          We partner with trusted farmers who are passionate about sustainable agriculture. Each farmer is carefully vetted to ensure they meet our high standards of quality and ethics.
+        </p>
+        <p class="text-gray-700 mb-4">
+          <strong>Why trust us?</strong>
+          <ul class="list-disc list-inside mb-4">
+            <li>Direct partnerships with local farmers.</li>
+            <li>Transparent sourcing and farming practices.</li>
+            <li>Fair prices for farmers and consumers.</li>
+          </ul>
+        </p>
+        <a href="trusted-farmers.html" class="bg-yellow-500 text-black px-6 py-3 rounded-lg shadow hover:bg-yellow-600 transition duration-300">Meet Our Farmers</a>
+      </div>
+
+      <!-- Sustainable Practices -->
+      <div class="p-6 bg-gradient-to-r from-green-200 to-yellow-200 rounded-lg shadow hover:shadow-lg transition duration-300">
+        <img src="https://cdn.glitch.global/52e1903d-ee0b-4f73-8336-7383956039e8/Sustainable%20Practices.jpg?v=1740403832914" alt="Sustainable Practices" class="w-40 h-40 mx-auto mb-6 object-cover rounded-full">
+        <h3 class="text-xl font-semibold mb-2 text-green-600">Sustainable Practices</h3>
+        <p class="text-gray-700 mb-4">
+          Sustainability is at the heart of everything we do. From eco-friendly farming methods to reducing food waste, we’re committed to building a greener future.
+        </p>
+        <p class="text-gray-700 mb-4">
+          <strong>Our initiatives:</strong>
+          <ul class="list-disc list-inside mb-4">
+            <li>Zero-waste farming techniques.</li>
+            <li>Composting and recycling programs.</li>
+            <li>Carbon-neutral delivery options.</li>
+          </ul>
+        </p>
+        <a href="sustainable-practices.html" class="bg-yellow-500 text-black px-6 py-3 rounded-lg shadow hover:bg-yellow-600 transition duration-300">Learn More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <!-- Features Name Section -->
+<section class="py-16 bg-gradient-to-r from-green-100 to-yellow-100">
+  <div class="container mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-8 text-green-700">Our Key Features</h2>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+      <!-- Farm-to-Restaurant Connection -->
+      <div class="p-6 bg-gradient-to-r from-green-200 to-yellow-200 rounded-lg shadow hover:shadow-lg transition duration-300">
+        <img src="https://cdn.glitch.global/52e1903d-ee0b-4f73-8336-7383956039e8/farm%20to%20restaurnt.jpeg?v=1740403599478" class="w-[300px] h-[300px] object-cover rounded">
+        <h3 class="text-xl font-semibold mt-4 text-green-600">Farm-to-Restaurant Connection</h3>
+        <p class="text-gray-700 mt-2">
+          Connect directly with restaurants to supply fresh, organic produce. Eliminate middlemen and ensure quality.
+        </p>
+        <a href="farm-to-restaurant.html" class="bg-yellow-500 text-black px-6 py-3 rounded-lg shadow hover:bg-yellow-600 transition duration-300 mt-4 inline-block">Learn More</a>
+      </div>
+
+      <!-- Pre-Order Crops -->
+      <div class="p-6 bg-gradient-to-r from-green-200 to-yellow-200 rounded-lg shadow hover:shadow-lg transition duration-300">
+        <img src="https://cdn.glitch.global/52e1903d-ee0b-4f73-8336-7383956039e8/pre%20order.jpeg?v=1740403988768" class="w-[300px] h-[100px] object-cover rounded">
+        <h3 class="text-xl font-semibold mt-4 text-green-600">Pre-Order Crops</h3>
+        <p class="text-gray-700 mt-2">
+          Reserve fresh produce before harvest and enjoy seasonal crops delivered to your doorstep.
+        </p>
+        <a href="crop-pre-order.html" class="bg-yellow-500 text-black px-6 py-3 rounded-lg shadow hover:bg-yellow-600 transition duration-300 mt-4 inline-block">Learn More</a>
+      </div>
+
+      <!-- Hyperlocal Farmer Marketplace -->
+      <div class="p-6 bg-gradient-to-r from-green-200 to-yellow-200 rounded-lg shadow hover:shadow-lg transition duration-300">
+        <img src="https://cdn.glitch.global/52e1903d-ee0b-4f73-8336-7383956039e8/hyper%20local.jpeg?v=1740404013029" alt="Hyperlocal Marketplace" class="w-[300px] h-[300px] object-cover rounded">
+        <h3 class="text-xl font-semibold mt-4 text-green-600">Hyperlocal Farmer Marketplace</h3>
+        <p class="text-gray-700 mt-2">
+          Buy fresh produce from farmers in your area and reduce the carbon footprint of transportation.
+        </p>
+        <a href="hyperlocal.html" class="bg-yellow-500 text-black px-6 py-3 rounded-lg shadow hover:bg-yellow-600 transition duration-300 mt-4 inline-block">Learn More</a>
+      </div>
+
+      <!-- Vouchers -->
+      <div class="p-6 bg-gradient-to-r from-green-200 to-yellow-200 rounded-lg shadow hover:shadow-lg transition duration-300">
+        <img src="https://cdn.glitch.global/52e1903d-ee0b-4f73-8336-7383956039e8/voucher.jpg?v=1740404026142" class="w-[300px] h-[300px] object-cover rounded">
+        <h3 class="text-xl font-semibold mt-4 text-green-600">Vouchers</h3>
+        <p class="text-gray-700 mt-2">
+          Enjoy discounts and special offers on fresh produce with our exclusive voucher system.
+        </p>
+        <a href="vouchers.html" class="bg-yellow-500 text-black px-6 py-3 rounded-lg shadow hover:bg-yellow-600 transition duration-300 mt-4 inline-block">Learn More</a>
+      </div>
+
+      <!-- Educational Content -->
+      <div class="p-6 bg-gradient-to-r from-green-200 to-yellow-200 rounded-lg shadow hover:shadow-lg transition duration-300">
+        <img src="https://cdn.glitch.global/52e1903d-ee0b-4f73-8336-7383956039e8/education.jpg?v=1740404040598" alt="Educational Content" class="w-[300px] h-[300px] object-cover rounded">
+        <h3 class="text-xl font-semibold mt-4 text-green-600">Educational Content</h3>
+        <p class="text-gray-700 mt-2">
+          Learn about sustainable farming, healthy eating, and reducing food waste with our resources.
+        </p>
+        <a href="education.html" class="bg-yellow-500 text-black px-6 py-3 rounded-lg shadow hover:bg-yellow-600 transition duration-300 mt-4 inline-block">Learn More</a>
+      </div>
+
+      <!-- Urban Farming -->
+      <div class="p-6 bg-gradient-to-r from-green-200 to-yellow-200 rounded-lg shadow hover:shadow-lg transition duration-300">
+        <img src="https://cdn.glitch.global/52e1903d-ee0b-4f73-8336-7383956039e8/urban%20agr.jpg?v=1740404050018" alt="Urban Farming" class="w-[300px] h-[300px] object-cover rounded">
+        <h3 class="text-xl font-semibold mt-4 text-green-600">Urban Farming</h3>
+        <p class="text-gray-700 mt-2">
+          Grow fresh produce in small spaces like balconies and rooftops with our urban farming solutions.
+        </p>
+        <a href="urban-farming.html" class="bg-yellow-500 text-black px-6 py-3 rounded-lg shadow hover:bg-yellow-600 transition duration-300 mt-4 inline-block">Learn More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Agriculturists Section -->
+<section class="py-16 bg-gradient-to-r from-green-100 to-yellow-100">
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl font-bold mb-8 text-green-700 text-center">Meet Our Agriculturists</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Agriculturist 1 -->
+      <div class="p-6 bg-gradient-to-r from-green-200 to-yellow-200 rounded-lg shadow hover:shadow-lg transition duration-300">
+        <img src="https://cdn.glitch.global/52e1903d-ee0b-4f73-8336-7383956039e8/profile.jpg?v=1740404452338" alt="Agriculturist 1" class="w-32 h-32 mx-auto rounded-full mb-4 object-cover">
+        <h3 class="text-xl font-semibold mb-2 text-green-600">Dr. Ramesh Kumar</h3>
+        <p class="text-gray-700 mb-4">
+          <strong>Expertise:</strong> Organic Farming, Soil Health
+        </p>
+        <p class="text-gray-700 mb-4">
+          Dr. Ramesh has over 15 years of experience in sustainable agriculture and has helped hundreds of farmers improve their crop yields.
+        </p>
+        <a href="mailto:ramesh.kumar@example.com" class="bg-yellow-500 text-black px-6 py-3 rounded-lg shadow hover:bg-yellow-600 transition duration-300">Contact Dr. Ramesh</a>
+      </div>
+
+      <!-- Agriculturist 2 -->
+      <div class="p-6 bg-gradient-to-r from-green-200 to-yellow-200 rounded-lg shadow hover:shadow-lg transition duration-300">
+        <img src="https://cdn.glitch.global/52e1903d-ee0b-4f73-8336-7383956039e8/profile.jpg?v=1740404452338" alt="Agriculturist 2" class="w-32 h-32 mx-auto rounded-full mb-4 object-cover">
+        <h3 class="text-xl font-semibold mb-2 text-green-600">Dr. Sunita Devi</h3>
+        <p class="text-gray-700 mb-4">
+          <strong>Expertise:</strong> Crop Rotation, Pest Management
+        </p>
+        <p class="text-gray-700 mb-4">
+          Dr. Sunita specializes in integrated pest management and has developed innovative techniques for crop rotation.
+        </p>
+        <a href="mailto:sunita.devi@example.com" class="bg-yellow-500 text-black px-6 py-3 rounded-lg shadow hover:bg-yellow-600 transition duration-300">Contact Dr. Sunita</a>
+      </div>
+
+      <!-- Agriculturist 3 -->
+      <div class="p-6 bg-gradient-to-r from-green-200 to-yellow-200 rounded-lg shadow hover:shadow-lg transition duration-300">
+        <img src="https://cdn.glitch.global/52e1903d-ee0b-4f73-8336-7383956039e8/profile.jpg?v=1740404452338" alt="Agriculturist 3" class="w-32 h-32 mx-auto rounded-full mb-4 object-cover">
+        <h3 class="text-xl font-semibold mb-2 text-green-600">Dr. Anil Patel</h3>
+        <p class="text-gray-700 mb-4">
+          <strong>Expertise:</strong> Water Management, Drip Irrigation
+        </p>
+        <p class="text-gray-700 mb-4">
+          Dr. Anil is a pioneer in water-efficient farming techniques and has helped farmers reduce water usage by up to 50%.
+        </p>
+        <a href="mailto:anil.patel@example.com" class="bg-yellow-500 text-black px-6 py-3 rounded-lg shadow hover:bg-yellow-600 transition duration-300">Contact Dr. Anil</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Farmer Spotlight Section -->
+  <section class="py-16 bg-gradient-to-r from-green-100 to-yellow-100">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-8 text-green-700">Farmer Spotlight</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="p-6 bg-gradient-to-r from-green-200 to-yellow-200 rounded-lg shadow hover:shadow-lg transition duration-300">
+          <img src="https://cdn.glitch.global/52e1903d-ee0b-4f73-8336-7383956039e8/profile.jpg?v=1740404452338" alt="Farmer 1" class="w-40 h-40 mx-auto rounded-full mb-6 object-cover">
+          <h3 class="text-xl font-semibold mb-2 text-green-600">Ramesh Patel</h3>
+          <p class="text-gray-700">"FreshMorph has helped me reach more customers and grow my business sustainably."</p>
+        </div>
+        <div class="p-6 bg-gradient-to-r from-green-200 to-yellow-200 rounded-lg shadow hover:shadow-lg transition duration-300">
+          <img src="https://cdn.glitch.global/52e1903d-ee0b-4f73-8336-7383956039e8/profile.jpg?v=1740404452338" alt="Farmer 2" class="w-40 h-40 mx-auto rounded-full mb-6 object-cover">
+          <h3 class="text-xl font-semibold mb-2 text-green-600">Sunita Devi</h3>
+          <p class="text-gray-700">"I'm proud to be part of a platform that values farmers and consumers equally."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+ <!-- Products Section -->
+<section id="products" class="py-16 bg-gradient-to-r from-green-100 to-yellow-100">
+  <div class="container mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-8 text-green-700">Our Products</h2>
+    <div class="relative">
+      <div class="carousel">
+        <!-- Product 1 -->
+        <div class="carousel-item">
+          <div class="p-6 bg-gradient-to-r from-green-200 to-yellow-200 rounded-lg shadow hover:shadow-lg transition duration-300">
+            <img src="https://cdn.glitch.global/52e1903d-ee0b-4f73-8336-7383956039e8/rice.jpeg?v=1740404270680" alt="Rice" class="w-full h-48 object-cover rounded">
+            <h3 class="text-xl font-semibold mt-4">Rice</h3>
+            <p class="text-green-600 font-bold mt-2">₹1200.00 /(25KG Bag)</p>
+          </div>
+        </div>
+        <!-- Product 2 -->
+        <div class="carousel-item">
+          <div class="p-6 bg-gradient-to-r from-green-200 to-yellow-200 rounded-lg shadow hover:shadow-lg transition duration-300">
+            <img src="https://cdn.glitch.global/52e1903d-ee0b-4f73-8336-7383956039e8/Banana.jpeg?v=1740404292938" alt="Banana" class="w-full h-48 object-cover rounded">
+            <h3 class="text-xl font-semibold mt-4">Banana</h3>
+            <p class="text-green-600 font-bold mt-2">₹70.00 /(12 Pieces)</p>
+          </div>
+        </div>
+        <!-- Product 3 -->
+        <div class="carousel-item">
+          <div class="p-6 bg-gradient-to-r from-green-200 to-yellow-200 rounded-lg shadow hover:shadow-lg transition duration-300">
+            <img src="https://cdn.glitch.global/52e1903d-ee0b-4f73-8336-7383956039e8/tomato.jpg?v=1740404280916" alt="Tomato" class="w-full h-48 object-cover rounded">
+            <h3 class="text-xl font-semibold mt-4">Tomato</h3>
+            <p class="text-green-600 font-bold mt-2">₹50.00 /KG</p>
+          </div>
+        </div>
+        <!-- Product 4 -->
+        <div class="carousel-item">
+          <div class="p-6 bg-gradient-to-r from-green-200 to-yellow-200 rounded-lg shadow hover:shadow-lg transition duration-300">
+            <img src="https://cdn.glitch.global/52e1903d-ee0b-4f73-8336-7383956039e8/potato.jpg?v=1740404284601" alt="Potato" class="w-full h-48 object-cover rounded">
+            <h3 class="text-xl font-semibold mt-4">Potato</h3>
+            <p class="text-green-600 font-bold mt-2">₹30.00 /KG</p>
+          </div>
+        </div>
+        <!-- Product 5 -->
+        <div class="carousel-item">
+          <div class="p-6 bg-gradient-to-r from-green-200 to-yellow-200 rounded-lg shadow hover:shadow-lg transition duration-300">
+            <img src="https://cdn.glitch.global/52e1903d-ee0b-4f73-8336-7383956039e8/onion.jpg?v=1740404288493" alt="Onion" class="w-full h-48 object-cover rounded">
+            <h3 class="text-xl font-semibold mt-4">Onion</h3>
+            <p class="text-green-600 font-bold mt-2">₹40.00 /KG</p>
+          </div>
+        </div>
+        <!-- Product 6 -->
+        <div class="carousel-item">
+          <div class="p-6 bg-gradient-to-r from-green-200 to-yellow-200 rounded-lg shadow hover:shadow-lg transition duration-300">
+            <img src="https://via.placeholder.com/300x200" alt="Carrot" class="w-full h-48 object-cover rounded">
+            <h3 class="text-xl font-semibold mt-4">Carrot</h3>
+            <p class="text-green-600 font-bold mt-2">₹60.00 /KG</p>
+          </div>
+        </div>
+        <!-- Product 7 -->
+        <div class="carousel-item">
+          <div class="p-6 bg-gradient-to-r from-green-200 to-yellow-200 rounded-lg shadow hover:shadow-lg transition duration-300">
+            <img src="https://via.placeholder.com/300x200" alt="Apple" class="w-full h-48 object-cover rounded">
+            <h3 class="text-xl font-semibold mt-4">Apple</h3>
+            <p class="text-green-600 font-bold mt-2">₹150.00 /KG</p>
+          </div>
+        </div>
+        <!-- Product 8 -->
+        <div class="carousel-item">
+          <div class="p-6 bg-gradient-to-r from-green-200 to-yellow-200 rounded-lg shadow hover:shadow-lg transition duration-300">
+            <img src="https://via.placeholder.com/300x200" alt="Mango" class="w-full h-48 object-cover rounded">
+            <h3 class="text-xl font-semibold mt-4">Mango</h3>
+            <p class="text-green-600 font-bold mt-2">₹100.00 /KG</p>
+          </div>
+        </div>
+        <!-- Product 9 -->
+        <div class="carousel-item">
+          <div class="p-6 bg-gradient-to-r from-green-200 to-yellow-200 rounded-lg shadow hover:shadow-lg transition duration-300">
+            <img src="https://via.placeholder.com/300x200" alt="Wheat" class="w-full h-48 object-cover rounded">
+            <h3 class="text-xl font-semibold mt-4">Wheat</h3>
+            <p class="text-green-600 font-bold mt-2">₹1000.00 /(25KG Bag)</p>
+          </div>
+        </div>
+        <!-- Product 10 -->
+        <div class="carousel-item">
+          <div class="p-6 bg-gradient-to-r from-green-200 to-yellow-200 rounded-lg shadow hover:shadow-lg transition duration-300">
+            <img src="https://via.placeholder.com/300x200" alt="Lemon" class="w-full h-48 object-cover rounded">
+            <h3 class="text-xl font-semibold mt-4">Lemon</h3>
+            <p class="text-green-600 font-bold mt-2">₹20.00 /(10 Pieces)</p>
+          </div>
+        </div>
+        <!-- Product 11 -->
+        <div class="carousel-item">
+          <div class="p-6 bg-gradient-to-r from-green-200 to-yellow-200 rounded-lg shadow hover:shadow-lg transition duration-300">
+            <img src="https://via.placeholder.com/300x200" alt="Cucumber" class="w-full h-48 object-cover rounded">
+            <h3 class="text-xl font-semibold mt-4">Cucumber</h3>
+            <p class="text-green-600 font-bold mt-2">₹25.00 /KG</p>
+          </div>
+        </div>
+        <!-- Product 12 -->
+        <div class="carousel-item">
+          <div class="p-6 bg-gradient-to-r from-green-200 to-yellow-200 rounded-lg shadow hover:shadow-lg transition duration-300">
+            <img src="https://via.placeholder.com/300x200" alt="Spinach" class="w-full h-48 object-cover rounded">
+            <h3 class="text-xl font-semibold mt-4">Spinach</h3>
+            <p class="text-green-600 font-bold mt-2">₹15.00 /KG</p>
+          </div>
+        </div>
+        <!-- Product 13 -->
+        <div class="carousel-item">
+          <div class="p-6 bg-gradient-to-r from-green-200 to-yellow-200 rounded-lg shadow hover:shadow-lg transition duration-300">
+            <img src="https://via.placeholder.com/300x200" alt="Grapes" class="w-full h-48 object-cover rounded">
+            <h3 class="text-xl font-semibold mt-4">Grapes</h3>
+            <p class="text-green-600 font-bold mt-2">₹80.00 /KG</p>
+          </div>
+        </div>
+        <!-- Product 14 -->
+        <div class="carousel-item">
+          <div class="p-6 bg-gradient-to-r from-green-200 to-yellow-200 rounded-lg shadow hover:shadow-lg transition duration-300">
+            <img src="https://via.placeholder.com/300x200" alt="Pineapple" class="w-full h-48 object-cover rounded">
+            <h3 class="text-xl font-semibold mt-4">Pineapple</h3>
+            <p class="text-green-600 font-bold mt-2">₹90.00 /Piece</p>
+          </div>
+        </div>
+        <!-- Product 15 -->
+        <div class="carousel-item">
+          <div class="p-6 bg-gradient-to-r from-green-200 to-yellow-200 rounded-lg shadow hover:shadow-lg transition duration-300">
+            <img src="https://via.placeholder.com/300x200" alt="Cabbage" class="w-full h-48 object-cover rounded">
+            <h3 class="text-xl font-semibold mt-4">Cabbage</h3>
+            <p class="text-green-600 font-bold mt-2">₹35.00 /KG</p>
+          </div>
+        </div>
+        <!-- Product 16 -->
+        <div class="carousel-item">
+          <div class="p-6 bg-gradient-to-r from-green-200 to-yellow-200 rounded-lg shadow hover:shadow-lg transition duration-300">
+            <img src="https://via.placeholder.com/300x200" alt="Cauliflower" class="w-full h-48 object-cover rounded">
+            <h3 class="text-xl font-semibold mt-4">Cauliflower</h3>
+            <p class="text-green-600 font-bold mt-2">₹40.00 /KG</p>
+          </div>
+        </div>
+        <!-- Product 17 -->
+        <div class="carousel-item">
+          <div class="p-6 bg-gradient-to-r from-green-200 to-yellow-200 rounded-lg shadow hover:shadow-lg transition duration-300">
+            <img src="https://via.placeholder.com/300x200" alt="Broccoli" class="w-full h-48 object-cover rounded">
+            <h3 class="text-xl font-semibold mt-4">Broccoli</h3>
+            <p class="text-green-600 font-bold mt-2">₹70.00 /KG</p>
+          </div>
+        </div>
+        <!-- Product 18 -->
+        <div class="carousel-item">
+          <div class="p-6 bg-gradient-to-r from-green-200 to-yellow-200 rounded-lg shadow hover:shadow-lg transition duration-300">
+            <img src="https://via.placeholder.com/300x200" alt="Pumpkin" class="w-full h-48 object-cover rounded">
+            <h3 class="text-xl font-semibold mt-4">Pumpkin</h3>
+            <p class="text-green-600 font-bold mt-2">₹30.00 /KG</p>
+          </div>
+        </div>
+        <!-- Product 19 -->
+        <div class="carousel-item">
+          <div class="p-6 bg-gradient-to-r from-green-200 to-yellow-200 rounded-lg shadow hover:shadow-lg transition duration-300">
+            <img src="https://via.placeholder.com/300x200" alt="Garlic" class="w-full h-48 object-cover rounded">
+            <h3 class="text-xl font-semibold mt-4">Garlic</h3>
+            <p class="text-green-600 font-bold mt-2">₹200.00 /KG</p>
+          </div>
+        </div>
+        <!-- Product 20 -->
+        <div class="carousel-item">
+          <div class="p-6 bg-gradient-to-r from-green-200 to-yellow-200 rounded-lg shadow hover:shadow-lg transition duration-300">
+            <img src="https://via.placeholder.com/300x200" alt="Ginger" class="w-full h-48 object-cover rounded">
+            <h3 class="text-xl font-semibold mt-4">Ginger</h3>
+            <p class="text-green-600 font-bold mt-2">₹150.00 /KG</p>
+          </div>
+        </div>
+      </div>
+      <!-- Navigation Buttons -->
+      <button class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-green-600 text-white p-2 rounded-full shadow-lg hover:bg-green-700 transition duration-300">
+        &lt;
+      </button>
+      <button class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-green-600 text-white p-2 rounded-full shadow-lg hover:bg-green-700 transition duration-300">
+        &gt;
+      </button>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Farmer Support Section -->
+<section class="py-16 bg-gradient-to-r from-green-100 to-yellow-100">
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl font-bold mb-8 text-green-700 text-center">Farmer Support</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- FAQ Section -->
+      <div class="p-6 bg-gradient-to-r from-green-200 to-yellow-200 rounded-lg shadow hover:shadow-lg transition duration-300">
+        <h3 class="text-2xl font-semibold mb-4 text-green-600">Frequently Asked Questions</h3>
+        <div class="space-y-4">
+          <!-- FAQ 1 -->
+          <div>
+            <h4 class="text-lg font-semibold text-green-700">How can I join FreshMorph as a farmer?</h4>
+            <p class="text-gray-700">
+              You can register on our platform by visiting the "Farmers" section and filling out the registration form. Our team will contact you for further steps.
+            </p>
+          </div>
+          <!-- FAQ 2 -->
+          <div>
+            <h4 class="text-lg font-semibold text-green-700">What types of crops can I sell on FreshMorph?</h4>
+            <p class="text-gray-700">
+              You can sell a wide variety of crops, including fruits, vegetables, grains, and herbs. We encourage organic and sustainably grown produce.
+            </p>
+          </div>
+          <!-- FAQ 3 -->
+          <div>
+            <h4 class="text-lg font-semibold text-green-700">How do I get paid for my produce?</h4>
+            <p class="text-gray-700">
+              Payments are processed securely through our platform. You will receive payment directly to your bank account after the delivery of your produce.
+            </p>
+          </div>
+          <!-- FAQ 4 -->
+          <div>
+            <h4 class="text-lg font-semibold text-green-700">What support does FreshMorph provide to farmers?</h4>
+            <p class="text-gray-700">
+              We provide training, resources, and access to a marketplace to help you grow and sell your produce effectively.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Query Submission Form -->
+      <div class="p-6 bg-gradient-to-r from-green-200 to-yellow-200 rounded-lg shadow hover:shadow-lg transition duration-300">
+        <h3 class="text-2xl font-semibold mb-4 text-green-600">Ask Your Question</h3>
+        <form class="space-y-4">
+          <div>
+            <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+            <input type="text" id="name" name="name" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500" required>
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+            <input type="email" id="email" name="email" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500" required>
+          </div>
+          <div>
+            <label for="question" class="block text-sm font-medium text-gray-700">Your Question</label>
+            <textarea id="question" name="question" rows="4" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500" required></textarea>
+          </div>
+          <div>
+            <button type="submit" class="bg-yellow-500 text-black px-6 py-3 rounded-lg shadow hover:bg-yellow-600 transition duration-300">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-green-600 to-green-800 text-white py-8">
+    <div class="container mx-auto text-center">
+      <div class="flex justify-center space-x-6 mb-4">
+        <a href="#" class="hover:text-yellow-300 transition duration-300">Facebook</a>
+        <a href="#" class="hover:text-yellow-300 transition duration-300">Twitter</a>
+        <a href="#" class="hover:text-yellow-300 transition duration-300">Instagram</a>
+        <a href="#" class="hover:text-yellow-300 transition duration-300">LinkedIn</a>
+      </div>
+      <p>&copy; 2025 FreshMorph. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // JavaScript for Carousel Navigation
+    const carousel = document.querySelector('.carousel');
+    const prevButton = document.querySelector('button:first-of-type');
+    const nextButton = document.querySelector('button:last-of-type');
+
+    prevButton.addEventListener('click', () => {
+      carousel.scrollBy({ left: -300, behavior: 'smooth' });
+    });
+
+    nextButton.addEventListener('click', () => {
+      carousel.scrollBy({ left: 300, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>
